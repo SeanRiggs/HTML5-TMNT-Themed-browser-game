@@ -1,5 +1,3 @@
-
-
 ---
 
 <div align="center">
@@ -14,7 +12,7 @@ Welcome to the Ninja Turtles Arcade Game, a fantastic fork of the classic arcade
 
 ## Table of Contents
 - [Overview](#overview)
-- [Game Features](#game-features)
+- [Game Features](#game-features-unique-anchor-link)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
 - [License](#license)
@@ -23,7 +21,7 @@ Welcome to the Ninja Turtles Arcade Game, a fantastic fork of the classic arcade
 
 This repository is a fork of the classic arcade game [Frogger](https://en.wikipedia.org/wiki/Frogger) and re-envisioned by https://github.com/rehanumar. His fork is found here: https://github.com/rehanumar/p3-classic-arcade-game
 
-NOW, reimagined with the adventurous spirit of the Ninja Turtles. Jump into the streets of New York City with leonardo and navigate through obstacles, collecting pizza slices and avoiding Shredder on his terror bike!
+NOW, reimagined with the adventurous spirit of the Ninja Turtles. Jump into the streets of New York City with Leonardo and navigate through obstacles, collecting pizza slices and avoiding Shredder on his terror bike!
 
 ## 🐢 Game Features
 
