@@ -1,5 +1,7 @@
 # p3-classic-arcade-game
 
+*Go to Ninja Turtles Arcade Game 🐢 [TMNT Themed](https://github.com/SeanRiggs/HTML5-TMNT-Themed-browser-game/tree/master/TMNT_Game_Theme)
+
 This is a clone of the classic arcade game [Frogger](https://en.wikipedia.org/wiki/Frogger) observing the feasibility of game engines in JavaScript! This project is using the HTML5 canvas element and JavaScript canvas APIs. The live demo of this project is available [here](https://rehanumar.github.io/p3-classic-arcade-game/index.html).
 
 ## Explanation of project structure:
