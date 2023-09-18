@@ -54,6 +54,7 @@ We welcome contributions from fellow Turtle fans! If you'd like to enhance the g
 ## 🐢 License
 
 This project is licensed under the [MIT License](LICENSE), so you're free to fork, modify, and share your own pizza-powered adventures.
+For legal license questions, see the legal readme: [Legal ReadMe](https://github.com/SeanRiggs/HTML5-classic-arcade-game/blob/master/TMNT_Game_Theme/Legal-README.md)
 
 <div align="center">
   Cowabunga, and happy gaming!
