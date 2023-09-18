@@ -1,0 +1,166 @@
+/* Header Section */
+header {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 5px 5px 5px 124px; /* 5px padding on top, right, bottom, and 24px on the left */
+  color: white;
+}
+
+/* Adjust the width of the logo */
+.logo {
+  width: 20%; /* You can adjust the width as needed */
+  max-width: none; /* Prevent maximum width restrictions */
+  height: auto; /* Maintain aspect ratio */
+}
+
+h1, h2 {
+  margin: 5px;
+}
+
+body {
+  text-align: center;
+  background: #8fbc8f;
+  margin: 0;
+}
+
+h1, p {
+  margin: 5px;
+}
+
+#keyboard {
+  opacity: 0;
+}
+
+.keyboard-link {
+  display: none;
+}
+
+/* CSS for the pop-up */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.popup-content h3 {
+  margin-top: 0;
+}
+
+/* Style for the "Instructions" button */
+.button-instructions {
+  background-color: #f44336; /* Red background color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding around the button text */
+  border: none; /* Remove the button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  margin-right: 10px; /* Add right margin to separate from other content */
+}
+
+/* Style for the "Reset" button */
+.button-reset {
+  background-color: #008CBA; /* Blue background color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding around the button text */
+  border: none; /* Remove the button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+/* Styles for the modal (pop-up) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* 80% width of the modal */
+  max-width: 500px; /* Max width */
+  text-align: center; /* Center-align the content in the modal */
+}
+
+/* Styling for the close button in the modal */
+.close {
+  color: #fff;
+  background-color: #f44336; /* Red background color */
+  padding: 5px 10px; /* Padding around the button text */
+  border: none; /* Remove the button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+.close:hover {
+  background-color: #ff6659; /* Darker red background color on hover */
+}
+
+/* Left-align the list items */
+.modal-content ul {
+  text-align: left; /* Left-align the list items */
+  list-style: none; /* Remove default list-style */
+  padding-left: 0; /* Remove default left padding for list items */
+}
+
+/* Style for the list items */
+.modal-content ul li {
+  margin-left: 20px; /* Add some left margin for the list items */
+  font-weight: bold; /* Make list items bold */
+  color: #333; /* Change the color of list items */
+  position: relative; /* Add relative positioning for the ::before pseudo-element */
+  margin-bottom: 15px; /* Add margin to increase spacing between each bullet statement */
+}
+
+/* Style for the list item bullets (using Font Awesome pizza-slice icon) */
+.modal-content ul li::before {
+  content: "\f818"; /* Use the Unicode character for the pizza-slice icon from Font Awesome */
+  font-family: 'Font Awesome 5 Free'; /* Specify the Font Awesome font family */
+  color: #f44336; /* Change the color of the pizza icon */
+  font-size: 16px; /* Adjust the size of the pizza icon */
+  margin-right: 5px; /* Add some right margin to separate the pizza icon from text */
+  position: absolute; /* Position the icon absolutely within the list item */
+  left: -20px; /* Adjust the left position to align the icon with the text */
+  top: 50%; /* Vertically center the icon */
+  transform: translateY(-50%); /* Correct vertical alignment */
+}
+
+/* Styling for the close button in the modal */
+.close {
+  position: fixed;
+  top: 150px;
+  right: 50px;
+  color: #fff;
+  background-color: #f44336; /* Red background color */
+  padding: 5px 10px; /* Padding around the button text */
+  border: none; /* Remove the button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  z-index: 999; /* Ensure the button stays on top */
+}
+
+.close:hover {
+  background-color: #ff6659; /* Darker red background color on hover */
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no">
+    <title>TMNT - Get That Slice!</title>
+    <link rel="icon" href="tmnticon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- CSS for the modal -->
+    <style>
+        /* Styles for the modal (pop-up) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* 80% width of the modal */
+            max-width: 500px; /* Max width */
+        }
+
+        /* Close button in the modal */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+  <!-- Logo and other header content -->
+  <img src="images/banner.png" alt="Ninja Turtles Logo" class="logo">
+  <h1>Get That Slice!</h1>
+  <h2>Presented by Ninja Turtles Pizza Company</h2>
+    <!-- Reset button -->
+    <button id="resetButton" class="button-reset" onclick="resetGame()">Reset</button>
+
+    <!-- Instructions button -->
+    <button id="instructionsButton" class="button-instructions" onclick="showInstructions()">Instructions</button>
+</header>
+
+<!-- Pop-up modal for instructions -->
+<div id="instructionsModal" class="modal">
+  <button class="close" onclick="closeInstructionsModal()">Close</button>
+  <div class="modal-content">
+      <h2>Instructions</h2>
+      <section>
+          <h3>Objective:</h3>
+          <p>The goal of the game is to collect as many pizza slices as possible while avoiding obstacles. As you collect pizza slices successfully you will begin to "level up" and differnt collection items will start showing up ... some <i>easter eggs</i> and special characters! </p>
+      </section>
+      <section>
+          <h3>Controls:</h3>
+          <ul>
+              <li>Use the arrow keys on your keyboard to control the movement of your Ninja Turtle character. Using W, S, A, and D keys also work to move Leonardo! </li>
+              <li>Move up, down, left, and right to navigate through the pizza-filled maze.</li>
+          </ul>
+      </section>
+      <section>
+          <h3>Gameplay:</h3>
+          <ul>
+              <li>Your Ninja Turtle will automatically move in the direction you press.</li>
+              <li>Collect as many pizza slices and other items as you can to earn points.</li>
+              <li>Be careful! Avoid running into The Evil Shredder as he will run you down with his motorbike.</li>
+              <li>If you touch shredder ... you'll lose a life.</li>
+              <li>You have three lives, so use them wisely!</li>
+              <li>Your score will be displayed at the top of the game screen.</li>
+          </ul>
+      </section>
+      <section>
+          <h3>Special Power-ups:</h3>
+          <ul>
+              <li>Look out for power-up items that may appear throughout the game.</li>
+              <li>Power-ups will provide you with extra lives!</li>
+              <li>These power ups come in the form of a heart, Collect them to enhance your chances of success.</li>
+          </ul>
+      </section>
+      <section>
+          <h3>Winning the Game:</h3>
+          <ul>
+              <li>The game continues until you lose all your lives.</li>
+              <li>Challenge yourself to achieve the highest score possible and become a pizza-eating champion!</li>
+          </ul>
+      </section>
+      <section>
+          <h3>Tips:</h3>
+          <ul>
+              <li>Plan your moves carefully to avoid obstacles and collect pizza efficiently.</li>
+              <li>Keep an eye out for enemies' patterns and adjust your strategy accordingly.</li>
+              <li>Use power-ups strategically to maximize your score.</li>
+          </ul>
+      </section>
+  </div>
+</div>
+
+<input type="text" id="keyboard">
+<a class="keyboard-link" href="#" onclick="document.getElementById('keyboard').focus();">
+    click here to get keyboard (if you are from mobile devices)
+</a>
+<script>
+    var keyboardElm = document.getElementsByClassName("keyboard-link")[0];
+    window.addEventListener("resize", showKeyboard);
+    function showKeyboard() {
+        if (window.innerWidth < 700) {
+            keyboardElm.setAttribute("style", "display: block;")
+        }
+    }
+
+    // Show the instructions modal
+    function showInstructions() {
+        var instructionsModal = document.getElementById('instructionsModal');
+        instructionsModal.style.display = 'block';
+    }
+
+    // Close the instructions modal
+    function closeInstructionsModal() {
+        var instructionsModal = document.getElementById('instructionsModal');
+        instructionsModal.style.display = 'none';
+    }
+
+    // Function to reset the game (you can implement this logic)
+    function resetGame() {
+        // Add your reset game logic here
+    }
+</script>
+<script src="js/resources.js"></script>
+<script src="js/app.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
