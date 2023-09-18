@@ -91,7 +91,7 @@ var app = app || {};
   this.y = 70;
   this.x = app.GAME_CONFIG.TILE_WIDTH * Math.floor(Math.random() * 5);
   this.upgrade = 0;
-  this.gems = ['pizza-ico', 'money-ico','TurtleVan-ico', 'pizza-box'];
+  this.gems = ['pizza-ico', 'money-ico','TurtleVan-ico','pizza-box','Casey-Jones','splinter-ico','logo-ico','april-ico','fsoldier2','100pts','baxter','bebop','Rocksteady2','krang','raph-ico','150pts','manhole-game-ico','RiggsCat','boo','shark','200pts','pizzacomp'];
   this.sprite = 'images/'+this.gems[this.upgrade]+'.png';
   };
 
@@ -99,7 +99,7 @@ var app = app || {};
     var player = app.ACTORS.player,
     gem = app.ACTORS.gem;
 
-    if(player.score === 5 || player.score === 10 || player.score === 15) {
+    if(player.score === 12 || player.score === 22 || player.score === 32 || player.score === 45 || player.score === 57|| player.score === 67 || player.score === 80 || player.score === 90 || player.score === 99 || player.score === 100 || player.score === 110 || player.score === 120 || player.score === 130 || player.score === 140 || player.score === 149 || player.score === 150 || player.score === 165 || player.score === 178 || player.score === 190 || player.score === 199 || player.score === 200) {
       gem.upgrade++;
     }
     this.sprite = 'images/'+this.gems[this.upgrade]+'.png';
