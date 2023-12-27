@@ -8,7 +8,7 @@
 
 Welcome to the Ninja Turtles Arcade Game, a fantastic fork of the classic arcade game inspired by the fearless Teenage Mutant Ninja Turtles! Cowabunga!
 
-🐢 **Play the Game:** [Live Demo ***coming soon, tweaking code***](https://your-game-url-here.com)
+🐢 **Play the Game:** [Live Demo](https://tmntpizzaco.com/GetThatSlice/))
 
 ## Table of Contents
 - [Overview](#overview)
