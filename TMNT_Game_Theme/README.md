@@ -1,61 +1,42 @@
----
+# Get That Slice! — Legacy TMNT Prototype
 
-<div align="center">
-  <img src="https://github.com/SeanRiggs/HTML5-classic-arcade-game/blob/master/TMNT_Game_Theme/images/banner.png"alt="Ninja Turtles Logo" width="200">
-</div>
+> **The current game is at [tmntpizzaco.com](https://tmntpizzaco.com/).**
+>
+> This folder contains the early themed prototype, preserved for learning and historical reference. The live game has changed substantially and its current source is not supplied by this folder.
 
-# Ninja Turtles Arcade Game 🐢
+## About this version
 
-Welcome to the Ninja Turtles Arcade Game, a fantastic fork of the classic arcade game inspired by the fearless Teenage Mutant Ninja Turtles! Cowabunga!
+This early adaptation of [Rehan Umar's classic arcade game](https://github.com/rehanumar/p3-classic-arcade-game) uses HTML5 Canvas and JavaScript. Play as Leonardo, avoid Shredder, and collect pizza and other themed items to increase your score. Hearts can add lives.
 
-🐢 **Play the Game:** [Live Demo](https://tmntpizzaco.com/GetThatSlice)
+The modern live game includes selectable turtles with different abilities, combos, additional power-ups, rivals, mobile controls, and a redesigned interface. Those features should not be expected in this legacy snapshot.
 
-## Table of Contents
-- [Overview](#overview)
-- [Game Features](#game-features-unique-anchor-link)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
+## Run the legacy game
 
-## 🐢 Overview
+From the repository root:
 
-This repository is a fork of the classic arcade game [Frogger](https://en.wikipedia.org/wiki/Frogger) and re-envisioned by https://github.com/rehanumar. His fork is found here: https://github.com/rehanumar/p3-classic-arcade-game
+```bash
+python3 -m http.server 8000
+```
 
-NOW, reimagined with the adventurous spirit of the Ninja Turtles. Jump into the streets of New York City with Leonardo and navigate through obstacles, collecting pizza slices and avoiding Shredder on his terror bike!
+Then open **http://localhost:8000/TMNT_Game_Theme/** in your browser. Use the arrow keys or WASD to move.
 
-## 🐢 Game Features
+For cloning instructions and the distinction between the original foundation and this themed version, see the [main README](../README.md).
 
-🍕 **Turtle Power**: Play as Leonardo your favorite Ninja Turtle character, but expect cameos of Donatello, Michelangelo, Raphael, Casey Jones, April O'Niel, and Splinter. - You will embark on a heroic journey.
+## Files
 
-🏙️ **Turtle Adventures**: Traverse the busy streets of New York City, avoiding shreeder, and making your way to items like pizza, friends, money, and enemies.
+- `index.html`: page layout and instructions.
+- `js/app.js`: characters, items, and keyboard input.
+- `js/engine.js`: game loop, rendering, and game-state handling.
+- `js/resources.js`: image loading and caching.
+- `js/script.js`: additional interface behavior.
+- `css/` and `images/`: styles and assets for this early version.
 
-🐢 **Pizza Quest**: Collect delicious pizza slices for points and power-ups. After all, pizza is the Turtles' favorite food!
+## Status and credits
 
-🦖 **Face the Enemies**: Encounter iconic enemies like the Bebop, Rockstead, Krang and Shredder. Defeat them to protect the city and their new Pizza Shop.
+This folder is retained as a historical learning example, not maintained as the current game's source or deployment.
 
-🕹️ **Classic Arcade Action**: Experience the excitement of classic arcade gameplay, reimagined with a Ninja Turtles twist.
+Original foundation: [Rehan Umar](https://github.com/rehanumar/p3-classic-arcade-game). TMNT-themed adaptation: [Sean Riggs](https://github.com/SeanRiggs).
 
-## 🐢 Getting Started
+See [LICENSE](LICENSE) for the existing software license and [Legal-README.md](Legal-README.md) for the historical fan-project notice. The software license does not itself grant rights to third-party characters or assets.
 
-1. Clone this repository to your local machine.
-2. Open `index.html` in your favorite web browser.
-3. Use the arrow keys to navigate through the city and avoid obstacles.
-5. Collect pizza slices and other items to earn points.
-6. Items will continue to upgrade as you collect them and avoid being shredded ... by Shredder.
-
-May the spirit of the Ninja Turtles guide you on your arcade adventure!
-
-## 🐢 Contributing
-
-We welcome contributions from fellow Turtle fans! If you'd like to enhance the game, add new features, or fix bugs, please feel free to submit pull requests. Together, we can make this arcade game even more tubular!
-
-## 🐢 License
-
-This project is licensed under the [MIT License](LICENSE), so you're free to fork, modify, and share your own pizza-powered adventures.
-For legal license questions, see the legal readme: [Legal ReadMe](https://github.com/SeanRiggs/HTML5-classic-arcade-game/blob/master/TMNT_Game_Theme/Legal-README.md)
-
-<div align="center">
-  Cowabunga, and happy gaming!
-</div>
-
----
+**[Play the current game](https://tmntpizzaco.com/).**
