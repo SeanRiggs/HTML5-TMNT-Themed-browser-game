@@ -31,6 +31,12 @@ For cloning instructions and the distinction between the original foundation and
 - `js/script.js`: additional interface behavior.
 - `css/` and `images/`: styles and assets for this early version.
 
+## Make it your own
+
+Got an idea that would make this prototype more fun? Fork it and try it. Add touch controls, tune the difficulty, polish the reset flow, or give the whole thing an original theme. Small improvements and clear explanations are useful too.
+
+See [Your turn: build something radical](../README.md#your-turn-build-something-radical) for contribution ideas and how to submit a focused pull request. Changes here apply to the legacy learning project; they do not automatically become part of the current live game.
+
 ## Status and credits
 
 This folder is retained as a historical learning example, not maintained as the current game's source or deployment.
